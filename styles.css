@@ -1,0 +1,128 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+}
+
+/* Decorative Background Patterns */
+.background-pattern {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-dark.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #3a3d5e;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border: 4px solid #ffafbd;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffddc1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#quiz-options {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#quiz-options li {
+    margin: 10px 0;
+}
+
+#quiz-options button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6a82fb;
+    border: 2px solid #6a82fb;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+
+#quiz-options button:hover {
+    background: #ff9a9e;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4);
+}
+
+#next-btn, #restart-btn {
+    padding: 15px 30px;
+    background-color: #fad0c4;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #fc5c7d;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(252, 92, 125, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#results h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #ffddc1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#score-value {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 154, 158, 0.5);
+    padding: 5px 10px;
+    border-radius: 8px;
+}

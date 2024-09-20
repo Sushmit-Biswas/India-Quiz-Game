@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushmit's India Quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-pattern">
+        <h1>Sushmit's India Quiz</h1>
+        <div class="quiz-container">
+            <div id="quiz">
+                <div id="quiz-header">
+                    <h2 id="question">Question Text</h2>
+                </div>
+                <ul id="quiz-options">
+                    <!-- Options will be inserted dynamically here -->
+                </ul>
+                <button id="next-btn">Next</button>
+            </div>
+            <div id="results" class="hidden">
+                <h2>Quiz Completed!</h2>
+                <h3 id="score">You scored: <span id="score-value"></span>/10</h3>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
